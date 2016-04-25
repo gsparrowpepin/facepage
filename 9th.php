@@ -8,11 +8,13 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<h1 class="header" id="logo">Facepage</h1>
-		<h2 class="header">Subtitle</h2>
-		<a href="9th.php">9th</a>
-		<a href="10th.php">10th</a>
-		<a href="11th.php">11th</a>
-		<a href="12th.php">12th</a>
+		<?php
+			$dir    = '/9th';
+			$files1 = scandir($dir);
+			$files2 = scandir($dir, 1);
+
+			print_r($files1);
+			print_r($files2);
+		?>
 	</body>
 </html>
