@@ -1,0 +1,171 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+}
+
+a {
+	color: black;
+}
+
+div.studentProfile {
+	width: 15%;
+	float: left;
+	margin: .8%;
+}
+
+@media screen and (max-width: 1300px) {
+    div.studentProfile {
+		width: 19%;
+		float: left;
+		margin: .5%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+    div.studentProfile {
+		width: 30%;
+		float: left;
+		margin: 1.5%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+    div.studentProfile {
+		width: 45%;
+		float: left;
+		margin: 2.5%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+    div.studentProfile {
+		width: 90%;
+		float: left;
+		margin: 5%;
+	}
+}
+
+p.studentName {
+	text-align: center;
+	font-size: 18px;
+	height: 30px;
+	color: black;
+}
+
+
+
+div.studentProfile img.studentImage {
+	margin: 0 auto;
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+section.gallery {
+	margin: 0 auto;
+	/*padding-top: 100px;*/
+	display: block;
+	overflow: auto;
+}
+/********************************
+Header
+********************************/
+ul#menu {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+	margin-top: 10px;
+}
+
+ul#menu li {
+	display: inline-block;
+}
+
+ul#menu li a {
+	padding: 10px 20px;
+	font-size: 18px;
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 340px) {
+	ul#menu {
+		width: 200px;
+		margin: 10px auto;
+	}
+}
+/********************************
+Header
+********************************/
+header {
+	height: 100px;
+	/*width: 100%;*/
+	background: #3a7267;
+	margin: 0 0 20px 0;
+	background-image: url(images/putneyLogoWhite.png);
+	background-repeat: no-repeat;
+	background-position: left 15px center;
+	background-size: auto 80px;
+	/*position: fixed;*/
+
+	-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+}
+
+header a {
+	color: white;
+	text-decoration: none;
+}
+
+header .siteTitle {
+	text-align: center;
+	color: white;
+	margin: 0;
+	padding-top: 10px;
+	font-size: 35px;
+	font-family: 'Merriweather', serif;
+}
+
+header .headerImage {
+	margin-top: -75px;
+	height: 70px;
+	width: auto;
+	float: right;
+}
+
+header #search {
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	padding: 5px;
+	margin: -55px 15px 0 0;
+	float: right;
+}
+
+/*Responsivity*/
+
+@media screen and (max-width: 775px) {
+    header {
+    	background-image: none;
+    	height: 150px;
+    }
+
+    header #search {
+    	float: none;
+    	width: 90%;
+    	margin: 0 auto;
+    	display: block;
+    }
+}
+
+@media screen and (max-width: 340px) {
+	header {
+		height: 180px;
+	}
+}
+
+/*.lb-data .lb-caption {
+	font-size: 18px;
+}*/
